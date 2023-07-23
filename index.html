@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Last touched profile-img
+      Date July 12,2023--->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main2</title>
+   
+  <!--CSS Link-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Bootstrap Link--->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> 
+
+</head>
+<body>
+<!--NavBar-Top--->
+  <nav class="navbar navbar-top navbar-expand-lg fixed-top">
+    <div class="navbar-container">
+      <!--Button for the minimize version--->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">  </span>
+      </button>
+
+      <!--Logo and menubar--->
+      <div class="logo-container justify-content-start">
+        <a class="logo" href="index-v1.html">
+          <span class="market">Market</span>
+          <span class="square">Square</span>
+        </a>
+      </div>
+
+      <!--Search Bar--->
+        <form class="search-bar" id="search-bar">
+          <input class="search-input" type="text" placeholder="I'm shopping for..." id="search-input">
+          <button class="search-button">Search</button>
+        </form>
+      
+
+      <!--Dashboard, Favorites, Cart, Profile, Login--->
+      <div class="navbar-icons">
+        <i class="inbox fa-solid fa-envelope"></i>
+        <i class="notification-cart fa-solid fa-bell"></i>
+        <i class="notification-cart fa-solid fa-bag-shopping"></i>
+        <div class="prof-container">
+          <img class="prof-img" src="img/temporary-slider/4.png" alt="">
+          <div class="loginNregister">
+            <div class="login">Welcome!!!</div>
+            <div class="register">User_001</div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+<!--NavBar-Bot--->
+  <nav class="navbar-bot fixed-top-bot">
+    <div class="navbar-bot-container">
+      <div class="left-container">
+
+        <a class="shop-by-category" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+        aria-controls="offcanvasWithBothOptions">
+          <i class="fa-solid fa-bars"></i>
+          Shop by Category
+        </a>
+
+        <!--SideBar-Contents--->
+        <div class="offcanvas offcanvas-start sidebar" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" 
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">All Categories</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+          </div>
+        </div>
+
+        <a class="link-container" href="#">
+          Luxury
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <a class="link-container" href="#">
+          Fashion
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <a class="link-container" href="#">
+          Electronics
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <a class="link-container" href="#">
+          Property
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <a class="link-container" href="#">
+          Cars
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <a class="link-container" href="#">
+          Collectibles
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+      </div>
+
+      <div class="right-container">
+
+        <a class="linkR-container shop-buying" href="#">
+          Shop
+        </a>
+
+        <a class="linkR-container shop-buying" href="#">
+          Buying
+        <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <a class="linkR-container Selling" href="#">
+          Selling
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      
+      </div>
+
+    </div>
+  </nav>
+<!--Homepage--->
+<!--Slider--->
+
+  <div class="homepage">
+    <div class="slider">
+      <div class="list">
+          <div class="item">
+              <img src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="item">
+              <img src="img/temporary-slider/3.png" alt="">
+          </div>
+          <div class="item">
+              <img src="img/temporary-slider/4.png" alt="">
+          </div>
+      </div>
+      <!-- button prev and next-->
+      <div class="buttons">
+        <i id="prev" class="s-prev fa-solid fa-chevron-left"></i>
+        <i id="next" class="s-next fa-solid fa-chevron-right"></i>
+      </div>
+      <!--dots (if 5 items => 5 dot)-->
+      <ul class="dots">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+      </ul>
+  </div>
+    <div class="s-right-content">
+      <img class="s-top-img" src="img/temporary-slider/2.png" alt="">
+      <img src="img/temporary-slider/3.png" alt="">
+    </div>
+  </div>
+
+<!--Featured Categories-->
+  <div class="fc-main-container">
+    <div class="fc-header">Featured Categories</div>
+    <div class="fc-container">
+      <div class="fc-img-container">
+        <img class="fc-img" src="img/Trending Categories/cat1.png" alt="">
+        <div class="fc-text">Mobile Phones</div>
+      </div>
+      <div class="fc-img-container">
+        <img class="fc-img-2" src="img/Trending Categories/cat2.png" alt="">
+        <div class="fc-text-2">
+          <span>Laptops  </span>
+        </div>
+      </div>
+      <div class="fc-img-container">
+        <img class="fc-img-6" src="img/Trending Categories/cat6.png" alt="">
+        <div class="fc-text-6">Desktops</div>
+      </div>
+      <div class="fc-img-container">
+        <img class="fc-img-5" src="img/Trending Categories/cat5.png" alt="">
+        <div class="fc-text-5">
+          <span>Headphones  </span>
+        </div>
+      </div>
+      <div class="fc-img-container">
+        <img class="fc-img-7" src="img/Trending Categories/cat7.png" alt="">
+        <div class="fc-text-7">
+          <span>Backpacks  </span>
+        </div>
+      </div>
+      <div class="fc-img-container">
+        <img class="fc-img-3" src="img/Trending Categories/cat3.png" alt="">
+        <div class="fc-text-3">
+          <span>Sofas  </span>
+        </div>
+      </div>
+      <div class="fc-img-container">
+        <img class="fc-img-4" src="img/Trending Categories/cat4.png" alt="">
+        <div class="fc-text-4">
+          <span>Dresses  </span>
+        </div>
+      </div>
+      <div class="fc-img-container">
+        <img class="fc-img-8" src="img/Trending Categories/cat8.png" alt="">
+        <div class="fc-text-8">
+          <span>Jackets  </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!--Recently listed products-->
+  <!--Houses-->
+  <div class="wrapper w">
+    <div class="rlp-header">
+      Newly listed budget houses in Metro Manila
+    </div>
+    <div class="rlp-filter">
+      <div class="rlp-place space-1 active">Manila</div>
+      <div class="rlp-place space">Quezon</div>
+      <div class="rlp-place space">Pasig</div>
+      <div class="rlp-place space">Mandaluyong</div>
+      <div class="rlp-place space">Cebu</div>
+      <div class="rlp-place space">Taguig</div>
+    </div>
+    <ul class="carousel c">
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">4</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Manila</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">4</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Manila</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">2</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Quezon</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">5</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Pasig</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">PRICE</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">0</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Mandaluyong</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">0</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Cebu</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">0</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Taguig</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">0</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Mandaluyong</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">0</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Manila</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">5</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Manila</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+        <li class="cd rlp-container">
+          <div class="rlp-top-contents">
+            <div class="rlp-img-container">
+              <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+            <div class="rlp-details">
+              <div class="rlp-price-follow">
+                <div class="rlp-price">Price</div>
+                <!--rlp.follow is in maintenance XD-->
+                <div class="rlp-follow">
+                  <div class="rlp-follow-count">5</div>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="rlp-info">Product info</div>
+              <div class="rlp-d-place">Quezon</div>
+            </div>
+          </div>
+          <div class="profile-container">
+            <div class="profile-img-container">
+              <img class="profile-img" 
+                src="img/temporary-slider/2.png" alt="">
+                <div class="profile-name-time">
+                  <div class="Profile-name">Profile name</div>
+                  <div class="Time-listed">Time listed</div>
+                </div>
+            </div>
+            <div class="profile-chat">
+              <i class="profile-chat-icon fa-regular fa-comment"></i>
+              <div class="profile-chat-text">Chat</div>
+            </div>
+          </div>
+        </li>
+    </ul>
+    <i id="left" class="fa-solid fa-chevron-left rlp-arrow l a"></i>
+    <i id="right" class="fa-solid fa-chevron-right rlp-arrow r a"></i>
+  </div>
+
+  <!--Cars-->
+  <div class="wrapper w2">
+    <div class="rlp-header">
+      Newly listed cars for sale
+    </div>
+    <div class="rlp-filter">
+      <div class="rlp-place space-1">Toyota Vios</div>
+      <div class="rlp-place space">Toyota Fortuner</div>
+      <div class="rlp-place space">Honda Civic</div>
+      <div class="rlp-place space">Honda City</div>
+      <div class="rlp-place space">Toyota Innova</div>
+      <div class="rlp-place space">Toyota Corolla Altis</div>
+    </div>
+    <ul class="carousel c2">
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">1</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">5</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">5</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">PRICE</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd2 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">5</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+  </ul>
+    <i id="left" class="fa-solid fa-chevron-left rlp-arrow l a"></i>
+    <i id="right" class="fa-solid fa-chevron-right rlp-arrow r a"></i>
+  </div>
+
+  <!--Furniture-->
+  <div class="wrapper w3">
+    <div class="rlp-header">
+      Newly listed products under Furniture and Home Living
+    </div>
+    <div class="rlp-filter">
+      <div class="rlp-place space-1">Furniture</div>
+      <div class="rlp-place space">Lighting & Fans</div>
+      <div class="rlp-place space">Home Decor</div>
+      <div class="rlp-place space">Home Fragrance</div>
+      <div class="rlp-place space">Cleaning & Homecare Supplies</div>
+      <div class="rlp-place space">Kitchenware & Tableware</div>
+    </div>
+    <ul class="carousel c3">
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">7</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">2</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">5</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">PRICE</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd3 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">5</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+  </ul>
+    <i id="left" class="fa-solid fa-chevron-left rlp-arrow l a"></i>
+    <i id="right" class="fa-solid fa-chevron-right rlp-arrow r a"></i>
+  </div>
+
+  <!--Featured Products-->
+  <div class="wrapper w4">
+    <div class="rlp-header">
+      Featured Products
+    </div>
+    <div class="rlp-filter">
+      <div class="rlp-place space-1">Mobile Phones</div>
+      <div class="rlp-place space">Laptops</div>
+      <div class="rlp-place space">Desktops</div>
+      <div class="rlp-place space">headphones</div>
+      <div class="rlp-place space">Backpacks</div>
+      <div class="rlp-place space">Sofas</div>
+      <div class="rlp-place space">Dresses</div>
+      <div class="rlp-place space">Jackets</div>
+    </div>
+    <ul class="carousel c4">
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">21</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">9</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">5</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">PRICE</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">0</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+      <li class="cd4 rlp-container">
+        <div class="rlp-top-contents">
+          <div class="rlp-img-container">
+            <img class="rlp-img" src="img/temporary-slider/2.png" alt="">
+          </div>
+          <div class="rlp-details">
+            <div class="rlp-price-follow">
+              <div class="rlp-price">Price</div>
+              <!--rlp.follow is in maintenance XD-->
+              <div class="rlp-follow">
+                <div class="rlp-follow-count">5</div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="rlp-info">Product info</div>
+            <div class="rlp-d-place">Place</div>
+          </div>
+        </div>
+        <div class="profile-container">
+          <div class="profile-img-container">
+            <img class="profile-img" 
+              src="img/temporary-slider/2.png" alt="">
+              <div class="profile-name-time">
+                <div class="Profile-name">Profile name</div>
+                <div class="Time-listed">Time listed</div>
+              </div>
+          </div>
+          <div class="profile-chat">
+            <i class="profile-chat-icon fa-regular fa-comment"></i>
+            <div class="profile-chat-text">Chat</div>
+          </div>
+        </div>
+      </li>
+  </ul>
+    <i id="left" class="fa-solid fa-chevron-left rlp-arrow l a"></i>
+    <i id="right" class="fa-solid fa-chevron-right rlp-arrow r a"></i>
+  </div>
+<!--Recently Listed Goods--->
+  <div class="rlg-main-container">
+    <div class="rlg-header-container">
+      <div class="rlg-header">Recently Listed Goods</div>
+    </div>
+    <div class="rlg-container">
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">4</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">2</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">1</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">7</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">0</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="rlg-container">
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">4</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">1</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">0</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">0</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">1</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="rlg-container">
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">14</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">5</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">2</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">6</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">1</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="rlg-container">
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">0</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">0</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">0</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">0</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">1</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="rlg-container">
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">4</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">2</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">11</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">2</div>
+            </div>
+          </div>
+      </div>
+      <div class="rlg-row">
+          <div class="rlg-top-contents">
+            <div class="rlg-profile-container">
+              <div class="rlg-profile">
+                <img class="rlg-Pimg" src="img/temporary-slider/2.png" alt="">
+              </div>
+              <div class="rlg-name-time">
+                <div class="rlg-profile-name">Profile Name</div>
+                <div class="rlg-time-listed">Time listed</div>
+              </div>
+            </div>
+            <div class="rlg-img-container">
+              <img class="rlg-img" src="img/temporary-slider/2.png" alt="">
+            </div>
+          </div>
+          <div class="rlg-bot-contents">
+            <div class="rlg-b-top-contents">
+              <div class="rlg-price">Price</div>
+              <div class="rlg-details">Details</div>
+              <div class="rlg-state">New</div>
+            </div>
+            <div class="rlg-follow">
+              <i class="fa-regular fa-heart"></i>
+              <div class="rlg-follow-count">5</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="rlg-button-container">
+      <button class="rlg-button">See More</button>
+    </div>
+  </div>
+   
+<!--Ads?
+  <div class="ad-main-container">
+    <div class="ad-header">
+      Buy and sell anything on Market Square
+    </div>
+    <div class="ad-img-container">
+      <div class="ad-img-text">
+        <img class="ad-img" src="img/land/1.png" alt="">
+        <div class="ad-text">
+          Buy things that you need </br> from people around the country
+        </div>
+      </div>
+      <div class="ad-img-text">
+        <img class="ad-img" src="img/land/2.png" alt="">
+        <div class="ad-text">
+          Sell your unused items in 30 seconds </br>and earn cash
+        </div>
+      </div>
+      <div class="ad-img-text">
+        <img class="ad-img" src="img/land/3.png" alt="">
+        <div class="ad-text">
+          Buy unique items in good condition</br> for a fraction of the cost
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+  <!--Banner
+  <div class="banner-main-container">
+    <div class="banner-container">
+      <div class="banner-slogan">Shop anywhere, anytime</div>
+    <div class="banner-logo-container">
+      <span class="banner-market">Market  </span>
+      <span class="banner-square">Square  </span>
+    </div>
+    <div class="banner-slogan">Your Ultimate Buy and Sell Destination</div>
+    <div class="banner-btn-container">
+      <button class="banner-btn">
+        <div class="b-btn-text">Shop Now</div>
+      </button>
+    </div>
+    </div>
+  </div>-->
+ 
+  <footer class="footer-top">
+    <div class="footer-main-container">
+      <div class="top-searches-container">
+        <div class="ts-header">Top Searches</div>
+        <div class="ts-lists">
+          <span class="list-item">
+            <a class="ts-text" href="#">lato lato</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">iphone</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">dress</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">ipad</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">uniqlo</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">sofa</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">croptop</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">nike</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">tote bag</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">crocs</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">laptop</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">adidas</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">jacket</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">luggage</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">bag</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">digicam</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">backpack</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">swimsuit</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">lacoste</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">macbook</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">mouse</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">kindle</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">wallet</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">boots</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">airpods</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">sandals</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">skirt</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">nintendo switch</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">camera</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">heels</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">gucci</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">instax</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">shoes</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">blazer</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">kindle</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">new balance</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">aquaflask</a>
+            <p class="ts-right-border">|</p>
+          </span>
+          <span class="list-item">
+            <a class="ts-text" href="#">phone case</a>
+            <p class="ts-right-border">|</p>
+          </span>
+        <span class="list-item">
+          <a class="ts-text" href="#">curtains</a>
+          <p class="ts-right-border">|</p>
+        </span>
+        <span class="list-item">
+          <a class="ts-text" href="#">carpet</a>
+          <p class="ts-right-border">|</p>
+        </span>
+        </div>
+      </div>
+
+      <hr>
+      
+      <div class="popular-stuff-container">
+        <div class="p-header">Popular Houses and Lots for Sale</div>
+        <div class="p-links-container">
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Quezon</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Makati</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Pasig</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Las Pinas</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Pasay</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Tagaytay</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in San Juan</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Cebu</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Bacolod</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Paranaque</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Marikina</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Baguio</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Caloocan</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Davao</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Batangas</a>
+            <p class="p-right-dot">•</p>
+          </span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="popular-stuff-container">
+        <div class="p-header">Popular Apartments and Condos for Sale</div>
+        <div class="p-links-container">
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Manila</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Baguio</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Tagaytay</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Cebu</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Davao</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Makati</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Cagayan de Oro</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Cavite</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Lipa</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Bacolod</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Batangas</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Paranque</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Taguig</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Pasig</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">House and Lot for Sale in Caloocan</a>
+            <p class="p-right-dot">•</p>
+          </span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="popular-stuff-container">
+        <div class="p-header">Popular Used Cars by Model</div>
+        <div class="p-links-container">
+          <span class="link">
+            <a class="p-text" href="#">Toyota Hilux Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Toyota Fortuner Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Toyota Vios Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Mitsubishi Lancer Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Hyundai Accent Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Honda Civic Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Nissan Almera Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Ford Everest Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Mitsubishi Pajero Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Hyundai Tucson Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#"> Honda City Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Kia Picanto Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Audi A4 Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="popular-stuff-container">
+        <div class="p-header">Popular Used Cars by Brand</div>
+        <div class="p-links-container">
+          <span class="link">
+            <a class="p-text" href="#">BMW Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Honda Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Honda Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Nissan Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Audi Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Ford Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Kia Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Hyundai Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Mercedes Benz Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Volkswagen Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Chevrolet Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Mitsubishi Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Lexus Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Mazda Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+          <span class="link">
+            <a class="p-text" href="#">Toyota Cars for Sale</a>
+            <p class="p-right-dot">•</p>
+          </span>
+        </div>
+      </div>
+
+      <hr>
+    </div>
+  </footer>
+  
+  <footer class="footer-bot">
+    <div class="bot-content">
+      <div class="bc-right">
+         © 2023 Market Square.
+      </div>
+      <div class="bc-left">
+        <span class="bcl-header">Home :</span>
+        <span class="bcl-links">
+          <a class="bcl-text" href="#">Featured Categories</a>
+          <p class="bcl-dot">•</p>
+        </span>
+        <span class="bcl-links">
+          <a class="bcl-text" href="#housesf">  Houses</a>
+          <p class="bcl-dot">•</p>
+        </span>
+        <span class="bcl-links">
+          <a class="bcl-text" href="#cdsf">  Cars</a>
+          <p class="bcl-dot">•</p>
+        </span>
+        <span class="bcl-links">
+          <a class="bcl-text" href="#furnituresf">  Furnitures</a>
+          <p class="bcl-dot">•</p>
+        </span>
+        <span class="bcl-links">
+          <a class="bcl-text" href="#fpf">Featured Products</a>
+          <p class="bcl-dot">•</p>
+        </span>
+        <span class="bcl-links">
+          <a class="bcl-text" href="#rlgf">Recently Listed Goods</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  
+
+
+  <!--Bootstrap Scripts--->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" 
+  integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <!--Bootstrap Scripts^-->
+
+  <!--FontAwesome Link--->
+  <script src="https://kit.fontawesome.com/75f6239104.js" crossorigin="anonymous"></script>
+  <!--FontAwesome Link^-->
+
+  <script src="script.js" defer></script>
+</body>
+</html>
